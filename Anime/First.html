@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First table</title>
+    <link rel="stylesheet" href="CSS/TStyle.css">
+    <link rel="stylesheet" href="Style.css">
+    <h1 id="h1" align="center">Anime Favorites</h1>
+    <hr>
+    <style>
+        .container {
+            position: relative;
+            width: 250px;
+        }
+        
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .container:hover .image {
+            opacity: 0.3;
+        }
+        
+        .container:hover .middle {
+            opacity: 1;
+        }
+        
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="Anime" align="center">
+            <tr>
+                <td class="container">
+                    <a href="Luffy.html" alt="link"><img src="Luffy.jpg" alt="Luffy" width="220" height="220" class="image"></a>
+                    <div class="middle">
+                        <div class="text">Luffy</div>
+                    </div>
+                </td>
+                <td class="container">
+                    <a href="Zoro.html" alt="Zoro"><img src="Zoro.jpg" alt="Zoro" width=" 220" height="220 " class="image"></a>
+                    <div class="middle">
+                        <div class="text">Zoro</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <a href="L.html" alt="Intelligent nigga"><img src="L.jpg " alt="L " width="220 " height="220 " class="image"></a>
+                    <div class="middle">
+                        <div class="text">L</div>
+                    </div>
+                </td>
+                <td class="container">
+                    <a href="light.html" alt="Bored Nigga"><img src="Light.jpg" alt="Light " width="220 " height="220 " class="image"></a>
+                    <div class="middle">
+                        <div class="text">Light</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="container">
+                    <a href="Naruto.html" alt="The 7th Hokage"><img src="Naruto.jpg " alt="Naruto " width="220 " height="220 " class="image"></a>
+                    <div class="middle">
+                        <div class="text">Naruto</div>
+                    </div>
+                </td>
+                <td class="container">
+                    <a href="Itachi.html" alt="The best"><img src="itachi.jpg " alt="Itachi " width="220 " height="220 " class="image"></a>
+                    <div class="middle">
+                        <div class="text">Itachi</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 style="text-align: center;">Time Table</h2>
+
+        <table id="Time" align="center" class="Time">
+            <tr class="Time">
+                <th>9.00-10.00</th>
+                <th>11.00-12.00</th>
+                <th>12.00-2.00</th>
+                <th>2.00-3.00</th>
+            </tr>
+            <tr class="Time">
+                <td colspan="2">lab1</td>
+                <td rowspan="2">lunch<br>break</td>
+                <td>class1</td>
+            </tr>
+            <tr class="Time">
+                <td>class1</td>
+                <td>class2</td>
+                <td>class3</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
